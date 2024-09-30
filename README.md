@@ -1,8 +1,8 @@
 ---
+icon: chart-scatter-3d
 description: >-
   This chapter will explain what coordinate transformations are, and how they
   are useful in Materials Science.
-icon: chart-scatter-3d
 ---
 
 # Coordinate Transformations
@@ -85,22 +85,24 @@ $$
 To fill out our transformation matrix, we simply need to find the cosine of the angle between the parent coordinates and the child coordinates. Let's start with a1 onto b1 and a2 onto b1.
 
 $$
-a_1 \cdot b_1 = cos(30)
+a_1 \cdot b_1 = \cos(30)
 $$
 
 $$
-a_2 \cdot b_1 = cos(60)
+a_2 \cdot b_1 = \cos(60)
 $$
 
+
+
 $$
-\left[ \begin{matrix} b_1 \\ b_2 \end {matrix}\right] = \left[\begin{matrix} 
-cos(30) & cos(60) \\ 
-a_1 \cdot b_2 & a_2 \cdot b_2 \end{matrix}\right]
+\begin{bmatrix} b_1 \\ b_2 \end{bmatrix} = \begin{bmatrix} 
+\cos(30) & \cos(60) \\ 
+a_1 \cdot b_2 & a_2 \cdot b_2 \end{bmatrix}
 \cdot
-\left[\begin{matrix} 
+\begin{bmatrix} 
 a_1 \\ 
 a_2 
-\end{matrix}\right]
+\end{bmatrix}
 $$
 
 Now, let's map a1 onto b2 and a2 onto b2.
@@ -172,5 +174,5 @@ This idea can be extended into 3-dimensions easily.
 
 Very often, in materials science, we are trying to identify transformations of our coordinate axis which eliminate shear stresses and simplify our stress state to one which contains only normal stresses. This coordinate system is often termed the "Principal Axis". This special type of transformation yields a transformation matrix populated by "Eigenvectors". In other words, eigenvectors are the cosines of the angles between the principal axis and the parent axis. When we perform this transformation and eliminate shear stresses, the normal stresses we are left with are called "Eigenvalues". In other words, the eigenvalues are the value of the normal stresses in the special orientation where we have no shear stresses.&#x20;
 
-###
+Eigenvalues are critical values in the context of linear transformations and matrix algebra. They represent the magnitudes of these transformations along specific directions defined by their corresponding eigenvectors. In essence, when a linear transformation is applied to an eigenvector, the resulting vector is simply a scaled version of the original, where the scaling factor is the eigenvalue. This property makes eigenvalues particularly useful in simplifying complex systems, such as stress analysis in materials science, where they correspond to principal stresses in a coordinate system aligned with the principal axes.
 
