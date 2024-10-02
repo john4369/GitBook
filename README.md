@@ -166,13 +166,19 @@ We now know how to express the vector V1 from the parent frame, in the child fra
 
 This idea can be extended into 3-dimensions easily.
 
+## A 3-D example
 
+We will now extend this idea of coordinate transformation into 3-dimensions.&#x20;
+
+{% hint style="info" %}
+Start with transformation matrix with easy cosine values then backcalculate to label angles between axis using 3-d visualizer. Then just insert snips of 3d image with axis labeled and angles annotated. While I'm making the example image, I should also make several exercise images.
+{% endhint %}
 
 
 
 ## Eigenvalues and Eigenvectors
 
-Very often, in materials science, we are trying to identify transformations of our coordinate axis which eliminate shear stresses and simplify our stress state to one which contains only normal stresses. This coordinate system is often termed the "Principal Axis". This special type of transformation yields a transformation matrix populated by "Eigenvectors". In other words, eigenvectors are the cosines of the angles between the principal axis and the parent axis. When we perform this transformation and eliminate shear stresses, the normal stresses we are left with are called "Eigenvalues". In other words, the eigenvalues are the value of the normal stresses in the special orientation where we have no shear stresses.&#x20;
+Very often, in materials science, we are trying to identify transformations of our coordinate axis which eliminate shear stresses and simplify our stress state to one which contains only normal stresses. This coordinate system is often termed the "Principal Axis". This special type of transformation yields a transformation matrix populated by "Eigenvectors". In other words, eigenvectors are the cosines of the angles between the principal axis and the parent axis. When we perform this transformation and eliminate shear stresses, the normal stresses we are left with are called "Eigenvalues". In other words, the eigenvalues are the value of the normal stresses in the special orientation where we have no shear stresses; also known as "Principal Stresses".&#x20;
 
-Eigenvalues are critical values in the context of linear transformations and matrix algebra. They represent the magnitudes of these transformations along specific directions defined by their corresponding eigenvectors. In essence, when a linear transformation is applied to an eigenvector, the resulting vector is simply a scaled version of the original, where the scaling factor is the eigenvalue. This property makes eigenvalues particularly useful in simplifying complex systems, such as stress analysis in materials science, where they correspond to principal stresses in a coordinate system aligned with the principal axes.
+This is what AI says when asked to explain eigenvectors and eigenvalues and how they are useful in materials science "Eigenvalues are critical values in the context of linear transformations and matrix algebra. They represent the magnitudes of these transformations along specific directions defined by their corresponding eigenvectors. In essence, when a linear transformation is applied to an eigenvector, the resulting vector is simply a scaled version of the original, where the scaling factor is the eigenvalue. This property makes eigenvalues particularly useful in simplifying complex systems, such as stress analysis in materials science, where they correspond to principal stresses in a coordinate system aligned with the principal axes."
 
